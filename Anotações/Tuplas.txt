@@ -1,0 +1,44 @@
+Em Python, tuplas são coleções ordenadas e imutáveis de elementos. Elas são muito semelhantes às listas,mas, ao contrário das
+listas, os elementos de uma tupla não podem ser alterados após a sua criação. As tuplas podem armazenar qualquer tipo de dado
+(como números, strings, listas, etc.), e você pode acessá-las
+por índices, como nas listas.
+
+Aqui estão as principais características das tuplas em Python:
+
+Imutabilidade: Uma vez criada, a tupla não pode ser modificada (não é possível adicionar, remover ou alterar seus elementos).
+Ordem: Os elementos em uma tupla têm uma ordem fixa e podem ser acessados através de índices, começando do índice 0.
+Suporte a diferentes tipos de dados: Você pode armazenar tipos de dados diferentes em uma mesma tupla.
+Sintaxe: Tuplas são criadas utilizando parênteses (), por exemplo:
+
+minha_tupla = (1, 2, 3, "Python")
+
+Exemplos:
+Criando uma tupla:
+t = (1, 2, 3)
+
+Acessando elementos:
+print(t[0])  # Saída: 1
+
+Tupla com um único elemento (importante colocar uma vírgula):
+t = (1,)
+
+Desempacotamento de tuplas:
+a, b, c = (1, 2, 3)
+print(a, b, c)  # Saída: 1 2 3
+
+Algumas operações suportadas:
+Concatenação: Você pode unir tuplas com o operador +:
+t1 = (1, 2)
+t2 = (3, 4)
+t3 = t1 + t2  # (1, 2, 3, 4)
+
+Repetição: Usando o operador *:
+t = (1, 2) * 3  # (1, 2, 1, 2, 1, 2)
+
+Verificando pertencimento:
+t = (1, 2, 3)
+print(2 in t)  # Saída: True
+
+Quando usar tuplas:
+Tuplas são úteis quando você precisa garantir que os dados não sejam alterados durante a execução do programa e quando você
+quer melhorar a performance (já que são mais rápidas que listas em operações de acesso e leitura).
