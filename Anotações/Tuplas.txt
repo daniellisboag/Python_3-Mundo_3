@@ -4,12 +4,10 @@ listas, os elementos de uma tupla não podem ser alterados após a sua criação
 por índices, como nas listas.
 
 Aqui estão as principais características das tuplas em Python:
-
 Imutabilidade: Uma vez criada, a tupla não pode ser modificada (não é possível adicionar, remover ou alterar seus elementos).
 Ordem: Os elementos em uma tupla têm uma ordem fixa e podem ser acessados através de índices, começando do índice 0.
 Suporte a diferentes tipos de dados: Você pode armazenar tipos de dados diferentes em uma mesma tupla.
 Sintaxe: Tuplas são criadas utilizando parênteses (), por exemplo:
-
 minha_tupla = (1, 2, 3, "Python")
 
 Exemplos:
