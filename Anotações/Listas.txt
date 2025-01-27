@@ -1,0 +1,37 @@
+Listas
+
+Em Python, uma lista é uma coleção de itens, que pode conter elementos de diferentes tipos, como números,
+strings, ou até outras listas. As listas são criadas com colchetes [] e os elementos são separados por vírgulas.
+
+Características das listas:
+Indexação: As listas têm índices, começando do 0, que permitem acessar os elementos individuais.
+Mutabilidade: As listas podem ser alteradas, ou seja, você pode adicionar, remover ou modificar itens após a criação.
+Ordenação: As listas mantêm a ordem dos elementos conforme são inseridos.
+
+Principais operações com listas:
+Adicionar itens: append(), extend(), insert()
+Remover itens: remove(), pop(), clear()
+Acessar itens: Usando índice (positivo ou negativo)
+Fatiamento: Para pegar sublistas usando [:]
+
+Exemplo:
+# Criando uma lista
+frutas = ["maçã", "banana", "laranja"]
+
+# Acessando elementos por índice
+print(frutas[0])  # "maçã"
+print(frutas[-1])  # "laranja" (último item)
+
+# Modificando um item
+frutas[1] = "manga"
+
+# Adicionando elementos
+frutas.append("uva")
+
+# Removendo um item
+frutas.remove("maçã")
+
+# Imprimindo a lista modificada
+print(frutas)  # ["manga", "laranja", "uva"]
+
+Esse exemplo mostra algumas das operações básicas que você pode realizar com listas em Python!
