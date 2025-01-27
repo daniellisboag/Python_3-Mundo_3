@@ -1,3 +1,5 @@
+Tuplas
+
 Em Python, tuplas são coleções ordenadas e imutáveis de elementos. Elas são muito semelhantes às listas,mas, ao contrário das
 listas, os elementos de uma tupla não podem ser alterados após a sua criação. As tuplas podem armazenar qualquer tipo de dado
 (como números, strings, listas, etc.), e você pode acessá-las
