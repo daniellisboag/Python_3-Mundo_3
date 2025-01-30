@@ -35,3 +35,32 @@ frutas.remove("maçã")
 print(frutas)  # ["manga", "laranja", "uva"]
 
 Esse exemplo mostra algumas das operações básicas que você pode realizar com listas em Python!
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Em Python, uma lista dentro de outra lista é chamada de lista aninhada. Isso significa que uma lista pode conter
+outras listas como elementos. Aqui está um exemplo de como funciona e como você pode trabalhar com esse tipo de estrutura:
+
+Exemplo de lista dentro de outra lista:
+lista_principal = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+Resumo:
+lista_principal é uma lista que contém outras listas.
+Cada sublista (como [1, 2, 3]) é um item dentro da lista principal.
+Você pode acessar os elementos de uma lista aninhada usando índices múltiplos. Por exemplo, lista_principal[0]
+acessa a primeira sublista ([1, 2, 3]), e lista_principal[0][1] acessa o valor 2.
+
+Como acessar elementos:
+# Acessar a primeira sublista
+print(lista_principal[0])  # Saída: [1, 2, 3]
+
+# Acessar o segundo valor da primeira sublista
+print(lista_principal[0][1])  # Saída: 2
+
+Iterando sobre uma lista aninhada:
+Se você quiser percorrer todos os elementos das sublistas, pode usar um laço de repetição:
+for sublista in lista_principal:
+   for item in sublista:
+      print(item)
+
+Isso vai imprimir cada elemento dentro das sublistas, um por um.
