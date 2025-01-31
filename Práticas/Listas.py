@@ -67,3 +67,69 @@ b[2] = 8
 
 print(f'Lista A: {a}')
 print(f'Lista B: {b}')
+
+# Cria uma lista.
+teste = list()
+
+# Adiciona dados na lista.
+teste.append('Daniel')
+teste.append(24)
+
+# Cria uma lista.
+galera = list()
+
+# Faz uma ligação da lista 'teste' para a lista 'galera'.
+# galera.append(teste)
+
+# Faz uma cópia da lista 'teste'.
+galera.append(teste[:])
+
+# Altera os dados da lista 'teste'.
+teste[0] = 'Maria'
+teste[1] = 22
+
+# Faz mais uma cópia da lista 'teste'.
+galera.append(teste[:])
+
+print(galera)
+
+# Cria uma lista dentro de outra lista.
+galera = [['João', 19], ['Ana', 33], ['Joaquim', 13], ['Maria', 45]]
+
+# Mostra a lista inteira.
+print(galera)
+
+# Mostra o elemento '0' da sublista '0'.
+print(galera[0][0])
+
+# Mostra o elemento '1' da sublista '2'. 
+print(galera[2][1])
+
+for p in galera:
+   print(f'{p[0]} tem {p[1]} anos de idade.')
+   print('-' * 30)
+
+# Cria listas.
+galera = []
+dados = []
+
+# Contador.
+maior = menor = 0
+
+for c in range(0, 3):
+   dados.append(input('Nome: '))
+   dados.append(int(input('Idade: ')))
+   galera.append(dados[:])
+   dados.clear()
+
+print(galera)
+
+for p in galera:
+   if p[1] >= 21:
+      print(f'{p[0]} é maior de idade.')
+      maior += 1
+   else:
+      print(f'{p[0]} é menor de idade')
+      menor += 1
+
+print(f'Temos {maior} maiores e {menor} menores de idade.')
