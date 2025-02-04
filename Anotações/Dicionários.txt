@@ -1,0 +1,57 @@
+Dicionários
+
+Os dicionários em Python são estruturas de dados que armazenam pares de chave e valor. Eles são úteis quando
+você precisa associar uma chave única a um valor específico, permitindo o acesso eficiente aos dados.
+
+Características principais:
+Chaves únicas: Cada chave em um dicionário deve ser única e imutável (ex.: strings, números ou tuplas).
+Valores mutáveis: Os valores podem ser de qualquer tipo de dado e podem ser modificados.
+Desordenados: A partir do Python 3.7, a ordem de inserção das chaves é mantida, mas um dicionário é, por
+definição, uma estrutura de dados desordenada.
+Acesso rápido: O acesso aos valores é feito por meio das chaves, proporcionando busca muito rápida.
+
+Sintaxe básica:
+dicionario = {'chave1': 'valor1', 'chave2': 'valor2'}
+
+Exemplos de operações:
+Acessar um valor:
+dicionario['chave1']
+
+Adicionar ou alterar um valor:
+dicionario['nova_chave'] = 'novo_valor'
+
+Remover um item:
+del dicionario['chave1']
+
+Verificar se uma chave existe:
+'chave1' in dicionario  # Retorna True ou False
+
+Métodos úteis:
+dicionario.keys() - retorna todas as chaves.
+dicionario.values() - retorna todos os valores.
+dicionario.items() - retorna uma lista de tuplas com chave e valor.
+dicionario.get('chave') - retorna o valor da chave ou None se não existir (sem erro).
+
+Exemplo completo:
+dicionario = {'nome': 'João', 'idade': 25, 'cidade': 'São Paulo'}
+
+# Acessando valores
+print(dicionario['nome'])  # João
+
+# Alterando valores
+dicionario['idade'] = 26
+
+# Adicionando um novo par chave-valor
+dicionario['profissao'] = 'Engenheiro'
+
+# Removendo um item
+del dicionario['cidade']
+
+# Verificando se a chave 'nome' existe
+print('nome' in dicionario)  # True
+
+# Obtendo todas as chaves
+print(dicionario.keys())  # dict_keys(['nome', 'idade', 'profissao'])
+
+Os dicionários são muito utilizados devido à sua versatilidade e eficiência. Eles são ideais para tarefas em
+que você precisa associar dados de forma clara e acessar rapidamente informações usando uma chave.
