@@ -52,3 +52,25 @@ brasil.append(estado_2)
 
 # Mostra o elemento 'uf' do primeiro dicionário na lista.
 print(brasil[0]['uf'])
+
+# ---------------------------------------------------------
+
+# Cria um dicionário.
+estado = {}
+
+# Cria uma lista.
+brasil = []
+
+for c in range (0, 3):
+
+   # Adiciona valores ao dicionário.
+   estado['uf'] = input('Unidade federativa: ')
+   estado['sigla'] = input('Sigla do estado: ')
+
+   # Faz uma cópia do dicionário para dentro da lista.
+   brasil.append(estado.copy())
+
+for i in brasil:
+   for v in i.values():
+      print(v, end = ' ')
+   print()
