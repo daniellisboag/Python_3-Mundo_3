@@ -1,0 +1,50 @@
+Funções
+
+Em Python, uma função é um bloco de código reutilizável que realiza uma tarefa específica.
+As funções são definidas usando a palavra-chave def, seguida do nome da função e parênteses que podem conter parâmetros.
+
+Aqui estão os principais conceitos sobre funções em Python:
+Definição de Função: Para definir uma função, usamos a palavra-chave def, seguida do nome da função e parênteses:
+
+def saudacao():
+   print("Olá, mundo!")
+
+Chamada de Função: Após a definição, você pode chamar a função pelo nome:
+saudacao()  # Saída: Olá, mundo!
+
+Funções com Parâmetros: Funções podem receber parâmetros para tornar o comportamento mais flexível. Por exemplo:
+def saudacao(nome):
+   print(f"Olá, {nome}!")
+
+saudacao("Maria")  # Saída: Olá, Maria!
+
+Funções com Retorno: Funções podem retornar um valor utilizando a palavra-chave return:
+def soma(a, b):
+   return a + b
+
+resultado = soma(3, 4)  # resultado é 7
+print(resultado)  # Saída: 7
+
+Parâmetros Opcionais (Valores Padrão): Você pode fornecer valores padrão para parâmetros,
+permitindo que a função seja chamada com menos argumentos:
+def saudacao(nome="Visitante"):
+   print(f"Olá, {nome}!")
+
+saudacao()  # Saída: Olá, Visitante!
+saudacao("João")  # Saída: Olá, João!
+
+Funções Lambda: Python também permite a criação de funções anônimas, chamadas de funções lambda.
+Elas são úteis para funções simples, geralmente em uma única linha:
+soma = lambda x, y: x + y
+print(soma(2, 3))  # Saída: 5
+
+Funções Recursivas: Uma função pode chamar a si mesma, criando um processo recursivo:
+def fatorial(n):
+   if n == 0:
+      return 1
+   else:
+      return n * fatorial(n - 1)
+
+print(fatorial(5))  # Saída: 120
+
+Esses são alguns dos conceitos fundamentais sobre funções em Python, que ajudam a organizar o código e promover a reutilização.
