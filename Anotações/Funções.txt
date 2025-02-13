@@ -48,3 +48,41 @@ def fatorial(n):
 print(fatorial(5))  # Saída: 120
 
 Esses são alguns dos conceitos fundamentais sobre funções em Python, que ajudam a organizar o código e promover a reutilização.
+
+# -----------------------------------------------------------------------------------------------------------------------------
+
+Empacotamento
+
+O empacotamento (ou "packing") em Python é uma técnica que permite agrupar múltiplos valores em uma única variável,
+geralmente dentro de uma função, para lidar com argumentos de maneira mais flexível.
+
+Na prática, o empacotamento pode ser feito de duas formas principais:
+
+1. Empacotamento de Posicionais com *args
+Usa-se o *args para empacotar argumentos posicionais em uma tupla dentro de uma função. Isso permite que a função aceite
+qualquer quantidade de argumentos, sem precisar definir o número exato deles.
+
+Exemplo:
+def exemplo(*args):
+   for arg in args:
+      print(arg)
+
+exemplo(1, 2, 3, 4)
+Aqui, args será uma tupla contendo todos os argumentos passados para a função (1, 2, 3, 4).
+
+2. Empacotamento de Nomeados com **kwargs
+Usa-se o **kwargs para empacotar argumentos nomeados em um dicionário. Isso permite passar um número variável de argumentos
+nomeados para uma função.
+
+Exemplo:
+def exemplo(**kwargs):
+   for chave, valor in kwargs.items():
+      print(f'{chave}: {valor}')
+
+exemplo(nome = "João", idade = 25)
+Neste caso, kwargs será um dicionário com as chaves e valores: {'nome' : 'João', 'idade' : 25}.
+
+Resumo:
+*args: Empacota argumentos posicionais em uma tupla.
+**kwargs: Empacota argumentos nomeados em um dicionário.
+Ambos são úteis quando você não sabe antecipadamente quantos argumentos serão passados para a função.
