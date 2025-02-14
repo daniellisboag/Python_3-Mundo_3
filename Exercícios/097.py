@@ -5,3 +5,12 @@
 # ---------------------
 #      Olá, mundo!     
 # ---------------------
+
+def mensagem(msg):
+   print('-' * (len(msg) + 2))
+   print(f'{msg:^{len(msg) + 2}}')
+   print('-' * (len(msg) + 2))
+
+mensagem('Daniel Lisboa')
+mensagem('Curso de Python no YouTube')
+mensagem('CeV')
