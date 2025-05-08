@@ -33,7 +33,7 @@ Este repositório contém os exercícios e desafios realizados durante os estudo
 
 ## 🙋‍♂️ Autor
 
-Feito com dedicação por **Daniel Lisboa**  
+Feito com dedicação por **Daniel Lisboa Gonçalves**
 📧 Contato: [daniellisboag0@gmail.com](mailto:daniellisboag0@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/daniellisboag0/)
 
