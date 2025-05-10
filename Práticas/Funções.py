@@ -215,3 +215,33 @@ resposta_3 = somar(4) # Passa só um valor: a = 4, b = 0, c = 0 → soma = 4
 print(f'Meus cálculos deram {resposta_1}, {resposta_2}, {resposta_3}.')
 
 # -----------------------------------------------------------------------
+
+def fatorial(num = 1):  # Define a função fatorial com valor padrão 1.
+    f = 1 # Variável acumuladora que começa com 1.
+    for c in range(num, 0, -1): # Loop que vai do número até 1 (contagem regressiva).
+        f *= c # Multiplica o acumulador pelo valor atual de c.
+    return f # Retorna o resultado final do fatorial.
+
+fatorial_1 = fatorial(5) # Calcula o fatorial de 5 → 5 * 4 * 3 * 2 * 1 = 120
+fatorial_2 = fatorial(4) # Calcula o fatorial de 4 → 4 * 3 * 2 * 1 = 24
+fatorial_3 = fatorial() # Usa o valor padrão 1 → fatorial de 1 = 1
+
+# Exibe os resultados formatados.
+print(f'Os resultados são {fatorial_1}, {fatorial_2}, {fatorial_3}')
+
+# -----------------------------------------------------------------------
+
+def par(n = 0): # Define uma função chamada 'par', com parâmetro opcional n (valor padrão 0).
+   if n % 2 == 0: # Verifica se o número é divisível por 2 (ou seja, se é par).
+      return True # Retorna True se for par.
+   else:
+      return False # Retorna False se for ímpar.
+
+num = int(input('Digite um número: ')) # Solicita um número inteiro ao usuário.
+
+if par(num): # Chama a função 'par' e verifica se o retorno é True.
+   print('É par!') # Se for, imprime que é par.
+else:
+   print('Não é par!') # Caso contrário, imprime que não é par.
+
+# -----------------------------------------------------------------------
