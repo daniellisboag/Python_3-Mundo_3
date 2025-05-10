@@ -146,7 +146,7 @@ print(f'No programa principal, n vale {n}')
 teste()
 
 # Tenta mostrar o valor de 'x' no escopo principal (isso vai gerar um erro!).
-print(f'No programa principal, n vale {x}') # Erro! 'x' não existe aqui.
+print(f'No programa principal, n vale {x}') # type: ignore # Erro! 'x' não existe aqui.
 
 # -----------------------------------------------------------------------
 
