@@ -86,3 +86,118 @@ Resumo:
 *args: Empacota argumentos posicionais em uma tupla.
 **kwargs: Empacota argumentos nomeados em um dicionário.
 Ambos são úteis quando você não sabe antecipadamente quantos argumentos serão passados para a função.
+
+# -----------------------------------------------------------------------------------------------------------------------------
+
+Interactive help
+
+O Interactive Help no Python é uma ferramenta que permite acessar informações sobre funções, classes, módulos e objetos
+diretamente no ambiente interativo do Python (como o terminal ou o console do Python). Isso é muito útil para explorar a
+documentação enquanto você está programando, sem precisar sair do seu ambiente de desenvolvimento.
+
+Aqui estão alguns recursos do Interactive Help:
+help(): A função help() fornece informações detalhadas sobre objetos, módulos, funções, etc.
+
+Pode ser usada de várias maneiras.
+
+Para obter ajuda geral:
+help()
+Isso entra no modo interativo de ajuda, onde você pode digitar o nome do objeto que deseja explorar.
+
+Para obter ajuda sobre um módulo, classe ou função específica:
+help(nome_do_objeto)
+
+Exemplo:
+help(str)
+Isso fornece informações sobre a classe str (strings) do Python.
+
+dir(): A função dir() lista os atributos e métodos disponíveis para um objeto, o que pode ser útil quando você deseja explorar
+o que pode ser feito com determinado objeto.
+
+Exemplo:
+dir(str)
+Isso retorna todos os métodos e atributos da classe str.
+
+pydoc: Além do help(), você pode usar o pydoc para gerar documentação no formato de texto de qualquer módulo do Python. Você
+pode usá-lo diretamente no terminal, fora do ambiente Python:
+pydoc nome_do_modulo
+Essas ferramentas tornam mais fácil navegar pela documentação e entender melhor as bibliotecas e funções que você está usando
+no Python, sem a necessidade de sair do seu ambiente de trabalho.
+
+# -----------------------------------------------------------------------------------------------------------------------------
+
+Parâmetros opcionais
+
+Parâmetros opcionais em Python são argumentos de função que possuem um valor padrão. Isso significa que, ao chamar a função,
+você pode omitir esses parâmetros e o Python usará o valor definido como padrão.
+
+def funcao(param1, param_opcional = valor_padrao):
+   # Código da função
+
+Exemplo:
+def saudacao(nome, saudacao = 'Olá'):
+   print(f'{saudacao}, {nome}!')
+
+saudacao('Maria') # Saída: Olá, Maria!
+saudacao('João', 'Bom dia') # Saída: Bom dia, João!
+
+Resumo:
+Parâmetros opcionais vêm após os obrigatórios.
+Se não forem passados na chamada da função, usam o valor padrão.
+Você pode passar parâmetros opcionais por nome, fora de ordem.
+
+# -----------------------------------------------------------------------------------------------------------------------------
+
+Escopo de variáveis
+
+O escopo define onde uma variável pode ser acessada dentro do código. Em Python, existem basicamente dois tipos principais:
+
+Escopo Local: Variáveis criadas dentro de funções. Só existem enquanto a função está rodando.
+
+Exemplo:
+def minha_funcao():
+   x = 10  # escopo local
+   print(x)
+
+minha_funcao()
+# print(x) → Erro! 'x' não existe fora da função
+
+Escopo Global: Variáveis criadas fora de qualquer função. Podem ser acessadas dentro de funções
+(mas não modificadas, a menos que use global).
+
+Exemplo:
+x = 10  # escopo global
+
+def minha_funcao():
+   print(x)  # funciona
+
+minha_funcao()
+
+# -----------------------------------------------------------------------------------------------------------------------------
+
+Return
+
+Em Python, a palavra-chave return é usada dentro de funções para encerrar a execução da função e enviar um valor de volta
+para quem a chamou.
+
+Estrutura básica:
+def minha_funcao():
+   return valor
+
+O que você precisa saber:
+Finaliza a função: qualquer código após return não será executado.
+Pode retornar qualquer tipo de dado: números, strings, listas, dicionários, objetos, etc.
+Pode retornar múltiplos valores: usando tuplas.
+
+def operacoes(a, b):
+   return a + b, a - b
+soma, subtracao = operacoes(10, 5)
+
+def quadrado(x):
+   return x * x
+
+resultado = quadrado(4)
+print(resultado)  # Saída: 16
+Se uma função não tiver return, ela retorna None por padrão.
+
+# -----------------------------------------------------------------------------------------------------------------------------
