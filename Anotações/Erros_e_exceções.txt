@@ -1,0 +1,56 @@
+Erros e exceções
+
+Erro (Error): Problemas que ocorrem durante a execução do programa.
+Exceção (Exception): Tipo especial de erro que pode ser tratado (evitado) para que o programa não pare abruptamente.
+
+Tipos comuns de erros (exceções)
+
+Exceção:	                           O que significa:
+
+SyntaxError                      	Erro de sintaxe (ex: esquecer dois-pontos, parênteses, etc.).
+NameError	                        Nome de variável/função não definido.
+TypeError	                        Tipo de dado incorreto (ex: somar string com inteiro).
+ValueError	                        Valor com tipo correto, mas inválido (ex: int("abc")).
+IndexError	                        Índice fora do intervalo da lista ou tupla.
+KeyError	Chave                      inexistente em um dicionário.
+AttributeError	                     Tentar acessar um atributo que não existe.
+ZeroDivisionError	                  Divisão por zero.
+FileNotFoundError	                  Arquivo não encontrado ao tentar abrir.
+ImportError / ModuleNotFoundError	Problema ao importar um módulo.
+
+Tratamento de exceções com try / except
+
+try:
+   x = int(input("Digite um número: "))
+   resultado = 10 / x
+except ValueError:
+   print("Você digitou algo que não é um número.")
+except ZeroDivisionError:
+   print("Não é possível dividir por zero.")
+except Exception as e:
+   print(f"Erro inesperado: {e}")
+else:
+   print("Tudo certo!")
+finally:
+   print("Bloco finally sempre é executado.")
+
+try: Bloco que tenta executar algo.
+except: Bloco que trata exceções.
+else: Executa se não houver exceção.
+finally: Executa sempre, com ou sem erro (útil para fechar arquivos, conexões etc).
+
+Criando sua própria exceção
+
+Você pode definir exceções personalizadas com classes:
+
+class MinhaExcecao(Exception):
+   pass
+
+def testar_valor(x):
+   if x < 0:
+      raise MinhaExcecao("Valor negativo não permitido.")
+
+try:
+   testar_valor(-1)
+except MinhaExcecao as e:
+   print(e)
