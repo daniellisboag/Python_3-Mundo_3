@@ -28,7 +28,6 @@ Este repositório contém os exercícios e desafios realizados durante os estudo
 
 ## 📌 Próximos Passos
 
-- Continuar com os exercícios do Mundo 3.
 - Aplicar os conceitos do Mundo 1, 2 e 3 em mini-projetos próprios.
 
 ## 🙋‍♂️ Autor
