@@ -24,7 +24,7 @@ Este repositório contém os exercícios e desafios realizados durante os estudo
 
 ✔️ Mundo 1 concluído — Todos os exercícios do Mundo 1 foram finalizados com sucesso.  
 ✔️ Mundo 2 concluído — Todos os exercícios do Mundo 2 foram finalizados com sucesso.  
-✔️ Mundo 3 concluído — Todos os exercícios do Mundo 2 foram finalizados com sucesso.
+✔️ Mundo 3 concluído — Todos os exercícios do Mundo 3 foram finalizados com sucesso.
 
 ## 📌 Próximos Passos
 
