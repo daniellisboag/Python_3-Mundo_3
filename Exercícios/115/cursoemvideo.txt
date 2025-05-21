@@ -1,5 +1,5 @@
-Gustavo; 41
-Ana; 22
-Pedro; 35
-Paulo; 95
-JosÃ©; 55
+José; 35
+Daniel; 24
+Gustavo; 30
+Siuvana; 24
+Gabriel; 17

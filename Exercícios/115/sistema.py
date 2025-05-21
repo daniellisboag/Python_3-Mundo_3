@@ -16,7 +16,10 @@ while True:
    if resposta == 1:
       ler_arquivo(file)
    elif resposta == 2:
-      cabeçalho('Opção 2')
+      cabeçalho('Novo cadastro')
+      nome = input('Nome: ')
+      idade = leia_int('Idade: ')
+      cadastrar(file, nome, idade)
    elif resposta == 3:
       cabeçalho('Saindo do sistema! Até logo.')
       break
